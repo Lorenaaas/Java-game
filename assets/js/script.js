@@ -15,12 +15,40 @@ function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 5);
     return choices [randomNumber];
 }
-console.log(getComputerChoice());
 
 
 function game(userChoice) {
-   
-}
+   const computerChoice = getComputerChoice();
+   switch(userChoice + computerChoice) {
+     case "scissorspaper":
+     case "paperrock":
+     case "rocklizard":
+     case "lizardspock":
+     case "spockscissors":
+     case "scissorslizard":
+     case "lizardpaper":
+     case "paperspock":
+        console.log("USER IS THE WINNER!");
+        break;
+    case "paperscissors":
+    case "paperrock":
+    case "lizardrock":
+    case "spocklizard":
+    case "scissorsspock":
+    case "lizardscissors":
+    case "paperlizard":
+    case "spockpaper":
+        console.log("COMPUTER IS THE WINNER!");
+        break;
+    case "rockrock":
+    case "paperpaper":
+    case "scissorsscissors":
+    case "lizardlizard":
+    case "spockspock":
+        console.log("IT'S A TIE!");
+
+   }
+
 function main() {
   rock_div.addEventListener('click', function() {
     game("rock");
