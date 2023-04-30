@@ -28,12 +28,12 @@ function lose(userChoice, computerChoice) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-   result_p.innerHTML = `${userChoice} loses to ${computerChoice} .You lost!`;
+    result_p.innerHTML = `${userChoice} loses to ${computerChoice} .You lost!`;
 }
 function tie(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-   result_p.innerHTML = `${userChoice} equals ${computerChoice} .It's a tie!`;
+    result_p.innerHTML = `${userChoice} equals ${computerChoice} .It's a tie!`;
 }
 
 function game(userChoice) {
@@ -88,3 +88,4 @@ function main() {
    game("spock");
 });
 }
+main();
