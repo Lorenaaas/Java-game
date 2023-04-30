@@ -10,21 +10,36 @@ const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
 
-rock_div.addEventListener('click', function() {
+function getComputerChoice() {
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const randomNumber = Math.floor(Math.random() * 5);
+    return choices [randomNumber];
+}
+console.log(getComputerChoice());
+
+
+function game(userChoice) {
+   
+}
+function main() {
+  rock_div.addEventListener('click', function() {
     game("rock");
 });
 
-paper_div.addEventListener('click', function() {
+  paper_div.addEventListener('click', function() {
    game("paper");
 });
-scissors_div.addEventListener('click', function() {
+  scissors_div.addEventListener('click', function() {
     game("scissors");
 });
-lizard_div.addEventListener('click', function() {
+  lizard_div.addEventListener('click', function() {
     game("lizard");
 });
 
-spock_div.addEventListener('click', function() {
+  spock_div.addEventListener('click', function() {
    game("spock");
 });
+}
+
+main();
 
