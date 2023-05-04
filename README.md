@@ -31,7 +31,10 @@
  
   <img src = "assets/images/iconss.jpg>
 
-  
+  # The Rules Area
+  * The Rules area presents itself in a paragraph explaining the game rules.
+
+  <img src = "assets/images/rules.png">
    # Testing
 
    ## Validating Testing
