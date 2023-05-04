@@ -92,3 +92,10 @@ header>h1 {
     font-family: Asap, sans-serif;
     font-size: 30px;
 }
+
+h2, p {
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+}
